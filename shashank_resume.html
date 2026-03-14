@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shashank Acharya – Flutter Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #fff;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 60px 24px;
+  }
+
+  .page {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  /* ── Header ── */
+  header {
+    padding-bottom: 28px;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 36px;
+  }
+
+  h1 {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .role {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 16px;
+    letter-spacing: 0.01em;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-size: 13px;
+    color: #444;
+  }
+
+  .contact a {
+    color: #444;
+    text-decoration: none;
+  }
+  .contact a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* ── Section ── */
+  section { margin-bottom: 32px; }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 14px;
+  }
+
+  /* ── Objective ── */
+  .objective {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.75;
+  }
+
+  /* ── Education ── */
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .edu-item:last-child { border-bottom: none; }
+
+  .edu-degree {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .edu-school {
+    font-size: 13px;
+    color: #666;
+  }
+
+  .edu-year {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  /* ── Skills ── */
+  .skills-table { width: 100%; border-collapse: collapse; }
+  .skills-table tr { border-bottom: 1px solid #ebebeb; }
+  .skills-table tr:last-child { border-bottom: none; }
+  .skills-table td { padding: 9px 0; vertical-align: top; font-size: 13px; }
+  .skills-table td:first-child {
+    width: 180px;
+    font-weight: 500;
+    color: #555;
+  }
+  .skills-table td:last-child { color: #1a1a1a; }
+
+  /* ── Projects ── */
+  .project-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .project-item:last-child { border-bottom: none; }
+
+  .project-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .project-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.65;
+  }
+
+  /* ── Certifications & Achievements ── */
+  .simple-list { list-style: none; }
+  .simple-list li {
+    padding: 9px 0;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 13px;
+    color: #1a1a1a;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+  .simple-list li:last-child { border-bottom: none; }
+  .simple-list li::before {
+    content: '—';
+    color: #bbb;
+    flex-shrink: 0;
+  }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #ebebeb;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 560px) {
+    .edu-item { flex-direction: column; gap: 4px; }
+    .edu-year { text-align: left; }
+    body { padding: 36px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Shashank Acharya</h1>
+    <div class="role">Flutter Developer</div>
+    <div class="contact">
+      <span>📍 Greater Noida, NCR</span>
+      <a href="tel:+916201392582">+91 62013 92582</a>
+      <a href="mailto:acharya4322@gmail.com">acharya4322@gmail.com</a>
+      <a href="https://linkedin.com/in/shashank-acharya" target="_blank">LinkedIn</a>
+      <a href="https://github.com/acharya4322" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">Career Objective</div>
+    <p class="objective">
+      Aspiring Flutter and IoT developer pursuing B.Tech in Computer Science and Engineering (IoT) at NIET, Greater Noida. Passionate about building scalable, user-centric applications with real-world impact across legal-tech, safety systems, automation, and agriculture using Flutter, Firebase, and IoT technologies.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div>
+        <div class="edu-degree">B.Tech – Computer Science & Engineering (IoT Specialization)</div>
+        <div class="edu-school">Noida Institute of Engineering and Technology (NIET), Greater Noida</div>
+      </div>
+      <div class="edu-year">2023 – 2027<br>Currently Pursuing</div>
+    </div>
+    <div class="edu-item">
+      <div>
+        <div class="edu-degree">Class XII (PCM)</div>
+        <div class="edu-school">CM SC College, Darbhanga</div>
+      </div>
+      <div class="edu-year">2020 – 2022</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td>App Development</td>
+        <td>Flutter, Dart, Firebase, REST API Integration</td>
+      </tr>
+      <tr>
+        <td>State Management</td>
+        <td>GetX, Provider</td>
+      </tr>
+      <tr>
+        <td>IoT Development</td>
+        <td>ESP32, ESP8266, Arduino Programming</td>
+      </tr>
+      <tr>
+        <td>Databases</td>
+        <td>MySQL, MongoDB</td>
+      </tr>
+      <tr>
+        <td>Languages</td>
+        <td>Dart, Python, Java, C</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-title">Projects</div>
+    <div class="project-item">
+      <div class="project-name">Bail Reckoner – Digital Legal Aid System</div>
+      <div class="project-desc">Flutter-based legal-tech platform to assess bail eligibility and manage digital bail applications with PDF generation.</div>
+    </div>
+    <div class="project-item">
+      <div class="project-name">Smart Alcohol Detection & Ride Safety System</div>
+      <div class="project-desc">IoT safety system using MQ-3 sensor and ESP32 to block ride confirmation via Flutter app if alcohol is detected.</div>
+    </div>
+    <div class="project-item">
+      <div class="project-name">Autonomous Rover with Flutter Control</div>
+      <div class="project-desc">Mobile-controlled rover supporting manual, path-based, and GPS navigation using Flutter and ESP8266.</div>
+    </div>
+    <div class="project-item">
+      <div class="project-name">Fasal App – Agriculture Support Platform</div>
+      <div class="project-desc">Farmer-focused Flutter app with Firebase authentication and weather API integration.</div>
+    </div>
+    <div class="project-item">
+      <div class="project-name">Smart Blind Stick with ESP32</div>
+      <div class="project-desc">Assistive IoT device using ESP32 and ToF sensors to provide vibration-based obstacle alerts.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Certifications</div>
+    <ul class="simple-list">
+      <li>Mobile Application Development – Infosys Springboard</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-title">Achievements</div>
+    <ul class="simple-list">
+      <li>1st Position – Bharat Shiksha Expo Hackathon</li>
+      <li>Smart India Hackathon (SIH) 2024 & 2025 Grand Finale Qualifier – App Developer</li>
+    </ul>
+  </section>
+
+  <footer>acharya4322@gmail.com &nbsp;·&nbsp; github.com/acharya4322</footer>
+
+</div>
+</body>
+</html>
